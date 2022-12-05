@@ -2,6 +2,10 @@ package org.alexanderrr;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ArrayContainer arrayContainer = new ArrayContainer();
+        Iterator iterator = arrayContainer.getIterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }
